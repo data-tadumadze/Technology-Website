@@ -1,0 +1,351 @@
+@import "../css/colors.css";
+
+@media only screen and (max-width: 1200px) {
+  .first-sec-header {
+    height: 40vh;
+  }
+
+  .first-sec-header h2 {
+    font-size: 3rem;
+  }
+
+  .robot-hand-img {
+    height: 30vh;
+  }
+
+  .second-section-wrapper1 {
+    height: 30%;
+  }
+
+  .girl-robot {
+    width: 17%;
+  }
+
+  .solutions-icons h3 {
+    font-size: 0.8rem;
+  }
+  .solutions-icons p {
+    font-size: 0.6rem !important;
+  }
+
+  .solutions-icons img {
+    width: 20%;
+  }
+
+  .event-description {
+    height: 10vh;
+    width: 81%;
+  }
+
+  .event-div:nth-child(3) img {
+    width: 86%;
+  }
+
+  .event-description div:nth-child(2) p:nth-child(1) {
+    font-size: 0.7rem;
+    line-height: 1rem;
+    margin-bottom: 5px;
+  }
+  .event-description div:nth-child(2) p:nth-child(2) {
+    font-size: 0.6rem;
+    line-height: 0.8rem;
+  }
+
+  .questions-header p {
+    font-size: 1rem;
+  }
+
+  .questions-div {
+    height: 50vh;
+  }
+
+  .question {
+    padding: 0;
+  }
+
+  .question p {
+    font-size: 1rem;
+  }
+
+  .footer-email-box p {
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  header {
+    height: 8vh;
+  }
+
+  .navbar img {
+    width: 80%;
+  }
+
+  .navbar a {
+    font-size: 0.8rem;
+  }
+
+  .login-div {
+    width: 18vw;
+  }
+  .login-div img {
+    width: 60%;
+  }
+
+  .login-div span {
+    font-size: 0.8rem;
+  }
+
+  .login-div button {
+    width: 12vw;
+    height: 4vh;
+    font-size: 0.8rem;
+  }
+
+  .first-section {
+    padding-top: 7vh;
+  }
+
+  .first-sec-wrapper {
+    margin: auto;
+    width: 80vw;
+  }
+
+  .robot-hand-img {
+    display: none;
+  }
+
+  #updates-Section {
+    height: 100vh;
+  }
+  .second-section-wrapper1 {
+    height: 30%;
+    padding-top: 8vh;
+  }
+
+  .second-section-container {
+    justify-content: space-around;
+  }
+  .second-section-wrapper1 h2 {
+    font-size: 1rem;
+  }
+
+  .second-section-wrapper1 p:first-child {
+    margin-bottom: 10px;
+  }
+  .second-section-wrapper1 p:nth-child(3) {
+    font-size: 0.7rem;
+  }
+  .solutions-icons {
+    visibility: hidden;
+  }
+  .second-section-wrapper2 {
+    margin: 0 auto;
+  }
+  .second-section-wrapper2 p:nth-child(3) {
+    font-size: 0.6rem;
+  }
+
+  .event-description {
+    width: 76%;
+  }
+
+  .footer-info-box {
+    width: 15%;
+  }
+  .footer-info-box span {
+    font-size: 0.7rem;
+  }
+  .footer-div2 div:nth-child(2) {
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .navbar-ul {
+    display: none;
+  }
+
+  .username {
+    display: none;
+  }
+
+  .login-div button {
+    display: none;
+  }
+
+  .login-div div {
+    display: none;
+  }
+
+  .toggle-btn {
+    width: 3vh;
+    height: 3vh;
+    border-radius: 5%;
+  }
+
+  .toggle-line {
+    width: 100%;
+    height: 0.1vh;
+    background-color: var(--orange);
+  }
+
+  .login-container {
+    left: 10vw;
+    width: 80vw;
+  }
+
+  .signup-container {
+    width: 80vw;
+    height: 70vh;
+    left: 10vw;
+  }
+
+  .first-sec-header h2 {
+    font-size: 2.5rem;
+  }
+  .second-section-wrapper2 p:nth-child(3) {
+    line-height: 0.7rem;
+  }
+
+  .event-div:nth-child(2) img {
+    width: 98%;
+  }
+
+  .event-div:nth-child(2) .event-description {
+    width: 85%;
+  }
+
+  .event-description div:first-child span:last-child {
+    font-size: 0.8rem;
+  }
+  .event-description div:first-child span:first-child {
+    font-size: 0.6rem;
+  }
+  .event-description div:nth-child(2) p:nth-child(1) {
+    font-size: 0.6rem;
+    line-height: 0.6rem;
+  }
+  .event-description div:nth-child(2) p:nth-child(2) {
+    font-size: 0.5rem;
+    line-height: 0.5rem;
+  }
+
+  .questions-div p {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+  }
+
+  .footer-email-box {
+    width: 25%;
+    height: 30%;
+    padding: 1rem;
+  }
+  .footer-email-box p {
+    display: none;
+  }
+  .footer-div2 div:nth-child(1) {
+    width: 30%;
+  }
+
+  .footer-info-box h4 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .play-btn {
+    animation: none !important;
+  }
+
+  .event-div {
+    width: 30%;
+  }
+  footer {
+    height: 60vh;
+  }
+
+  .footer-div1 {
+    height: 40vh;
+  }
+  .footer-div2 div:nth-child(1),
+  .footer-div2 div:nth-child(2) {
+    width: 30%;
+    font-size: 0.7rem;
+  }
+
+  .question p {
+    width: 70%;
+  }
+}
+
+#modalQuestion {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  margin-top: 10%;
+}
+
+#modalAnswer {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive-navbar-ul {
+    font-size: 0.7rem;
+  }
+
+  .first-sec-header h2 {
+    color: var(--darkblue);
+  }
+
+  .first-sec-figures {
+    display: none;
+  }
+
+  .second-section-wrapper2 p:nth-child(3) {
+    font-size: 0.5rem;
+  }
+
+  .second-section-wrapper2 h3 {
+    font-size: 1rem;
+  }
+
+  #events-section {
+    height: 160vh;
+  }
+
+  .events-wrapper {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  .event-div {
+    width: 50%;
+  }
+
+  .questions-header h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .questions-header p {
+    font-size: 0.8rem;
+  }
+
+  .footer-info-box h4,
+  .footer-email-box h4 {
+    font-size: 0.5rem;
+  }
+
+  .footer-info-box span {
+    font-size: 0.3rem;
+  }
+  .footer-email-box div input {
+    height: 3vh;
+    font-size: 0.4rem;
+  }
+}

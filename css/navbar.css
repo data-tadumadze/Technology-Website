@@ -1,0 +1,139 @@
+@import "../css/colors.css";
+
+header {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  height: 12vh;
+  width: 100vw;
+  background-color: var(--darkblue);
+  border-bottom: 1px solid var(--white);
+}
+
+.navbar {
+  width: 80vw;
+  margin: auto;
+}
+
+.navbar-ul {
+  width: 35vw;
+  color: var(--grey);
+}
+
+.navbar-ul li {
+  text-transform: capitalize;
+}
+
+.navbar-ul li a {
+  text-decoration: none;
+  color: var(--grey);
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  margin-top: 3px;
+}
+
+.navbar-ul div:hover > a {
+  color: var(--orange);
+}
+
+.navbar-ul div:hover > .dot {
+  background-color: var(--orange);
+}
+
+.login-div {
+  width: 15vw;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.login-div div {
+  width: 4vw;
+}
+
+.username {
+  color: var(--orange);
+}
+
+.toggle-btn {
+  display: inline-flex;
+}
+
+.login-div div:hover {
+  color: var(--orange);
+  cursor: pointer;
+}
+
+.login-div button {
+  width: 6vw;
+  height: 5vh;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--orange);
+  color: var(--white);
+  text-transform: capitalize;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.login-div button:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+/* Responsive Navbar */
+
+.responsive-navbar {
+  position: fixed;
+  right: 0;
+  width: 100px;
+  z-index: 1;
+  top: 0;
+  height: 100vh;
+  width: 45vw;
+  background-color: var(--grey);
+  border-left: 5px solid var(--orange);
+  padding-top: 10vh;
+}
+
+.responsive-navbar div {
+  height: 80vh;
+}
+
+.responsive-navbar-ul {
+  height: 40vh;
+}
+
+.responsive-navbar-ul li {
+  text-transform: capitalize;
+}
+
+.close-navbar {
+  position: fixed;
+  top: 3vh;
+  right: 3vh;
+}
+
+.responsive-navbar-ul li a {
+  text-decoration: none;
+  color: var(--darkblue);
+}
+
+.responsive-login {
+  border: none;
+  border-radius: 15px;
+  text-transform: capitalize;
+  padding: 5px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.responsive-navbar-ul span {
+  color: var(--white);
+}

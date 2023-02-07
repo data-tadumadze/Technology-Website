@@ -1,0 +1,125 @@
+@import "../css/colors.css";
+@import "../css/animations.css";
+
+footer {
+  justify-content: space-evenly;
+  height: 80vh;
+  border-top: 1px solid var(--white);
+  background-color: var(--darkblue);
+}
+
+.footer-div1 {
+  width: 80vw;
+  height: 50vh;
+  margin: 0 auto;
+}
+
+.footer-info-box {
+  height: 60%;
+}
+
+.footer-info-box h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  color: var(--white);
+}
+
+.footer-info-box span {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: var(--grey);
+}
+
+.footer-info-box span:hover {
+  border-bottom: 1px solid var(--grey);
+  cursor: pointer;
+}
+
+.footer-email-box {
+  width: 20%;
+  height: 50%;
+  margin-top: -2%;
+  padding: 3rem;
+  background-color: #0e0922;
+}
+
+.footer-email-box h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  color: var(--white);
+}
+
+.footer-email-box div {
+  margin-bottom: 10px;
+}
+
+.footer-email-box div input {
+  width: 90%;
+  height: 5vh;
+  padding: 5px;
+  border: 1px solid var(--white);
+  border-right: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #0e0922;
+  color: var(--white);
+}
+
+.footer-email-box div button {
+  border: none;
+  width: 25%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  background-color: var(--orange);
+}
+
+.footer-email-box p {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  color: var(--white);
+}
+
+.footer-div2 {
+  margin: 0 auto;
+  width: 80vw;
+}
+
+.footer-div2 div:nth-child(1) {
+  width: 25%;
+}
+
+.footer-div2 div:nth-child(1) span {
+  text-transform: capitalize;
+  color: var(--white);
+}
+
+.footer-div2 div:nth-child(1) span:hover {
+  border-bottom: 1px solid var(--white);
+  cursor: pointer;
+}
+
+.footer-div2 div:nth-child(2) {
+  width: 15%;
+}
+
+.footer-icon:nth-child(1):hover {
+  background-color: #0077b5;
+}
+.footer-icon:nth-child(2):hover {
+  background-color: #4267b2;
+}
+
+.footer-icon:nth-child(3):hover {
+  background-color: #171515;
+}
+
+.footer-icon:hover {
+  cursor: pointer;
+  animation: up 0.1s ease-in forwards;
+  border-radius: 50%;
+}

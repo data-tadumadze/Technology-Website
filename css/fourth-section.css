@@ -1,0 +1,85 @@
+@import "../css/colors.css";
+@import "../css/animations.css";
+
+#events-section {
+  height: 100vh;
+  padding-top: 14vh;
+  background-color: var(--darkblue);
+}
+
+.events-container {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+}
+
+.events-container h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: -1px;
+  color: var(--white);
+}
+
+.events-wrapper {
+  margin: auto;
+  width: 80%;
+}
+
+.event-div img {
+  width: 90%;
+  padding-top: 5%;
+  border: 1px solid var(--white);
+  background-color: #0182aa1a;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.events-wrapper .event-div:nth-child(2) img {
+  padding-bottom: 3%;
+}
+
+.event-description {
+  width: 83%;
+  height: 15vh;
+  padding: 10px;
+  border: 5px solid var(--orange);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.event-description div:first-child span:first-child {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: var(--orange);
+}
+.event-description div:first-child span:last-child {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.event-description div:last-child {
+  width: 80%;
+  height: 10%;
+}
+
+.event-description div:last-child p:first-child {
+  font-weight: 600;
+  line-height: 1.5rem;
+  color: var(--white);
+}
+.event-description div:last-child p:last-child {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  color: var(--white);
+}
+
+.event-div:hover {
+  cursor: pointer;
+  animation: up 0.1s ease-in forwards;
+}
+
+.event-div:hover > .event-description {
+  animation: shadow 0.1s ease-in forwards;
+}

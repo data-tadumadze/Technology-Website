@@ -1,0 +1,89 @@
+@import "../css/colors.css";
+@import "../css/animations.css";
+
+.first-section {
+  padding-top: 12vh;
+}
+
+.first-section-container {
+  background-image: url("../images/Robot-Background.png");
+  background-color: #cccccc;
+  height: 88vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.first-sec-wrapper {
+  width: 70vw;
+  margin-left: 12%;
+}
+
+.first-sec-header {
+  align-items: flex-start;
+  height: 60vh;
+}
+
+.first-sec-header h1 {
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: var(--orange);
+  letter-spacing: 4px;
+}
+
+.first-sec-header h2 {
+  width: 25vw;
+  font-size: 4rem;
+  text-transform: capitalize;
+  letter-spacing: -3px;
+  line-height: 1.2;
+  color: var(--white);
+  font-weight: 600;
+}
+
+.first-sec-header button {
+  width: 160px;
+  height: 50px;
+  border: none;
+  border-radius: 40px;
+  background-color: var(--orange);
+  color: var(--white);
+  text-transform: capitalize;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.first-sec-header button:hover {
+  animation: bigger 0.1s ease-in forwards;
+  background-color: var(--darkblue);
+  color: var(--orange);
+}
+
+.first-sec-header button div {
+  width: 100px;
+  margin: auto;
+}
+
+.first-sec-figures {
+  height: 70vh;
+  margin-top: 50px;
+}
+
+.first-sec-figures div {
+  height: 50vh;
+}
+
+.first-sec-figures img {
+  width: 70%;
+}
+
+.rectangle-img {
+  padding-left: 55px;
+}
+
+.robot-hand-img {
+  position: relative;
+  top: 40vh;
+  right: 0;
+  height: 45vh;
+}

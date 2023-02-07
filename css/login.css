@@ -1,0 +1,91 @@
+@import "../css/colors.css";
+
+.login-modal {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../Images/Robot-Background.png");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-container {
+  position: absolute;
+  top: 15%;
+  left: 40vw;
+  width: 20vw;
+  height: 50vh;
+  background-color: var(--darkblue);
+  border: 5px solid var(--orange);
+  border-radius: 10px;
+  justify-content: space-evenly;
+}
+
+.login-container h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10%;
+  color: var(--white);
+}
+
+.error-message {
+  font-size: 0.8rem;
+  top: 18%;
+  position: absolute;
+  text-align: center;
+  color: red;
+}
+
+.login-container span {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  color: var(--orange);
+}
+
+.login-container span:hover {
+  color: var(--white);
+  cursor: pointer;
+}
+
+.login-container input {
+  width: 50%;
+  height: 4vh;
+  padding: 5px;
+  border: 3px solid var(--orange);
+  border-radius: 3px;
+}
+
+.modal-login-btn {
+  font-size: 1rem;
+  height: 5vh;
+  width: 50%;
+  background-color: var(--orange);
+  color: var(--white);
+  border: none;
+  border-radius: 20px;
+}
+
+.modal-login-btn:hover {
+  background-color: var(--white);
+  color: var(--orange);
+  cursor: pointer;
+}
+
+.signup-btn {
+  font-size: 1rem;
+  background-color: var(--darkblue);
+  color: var(--orange);
+  border: none;
+  border-bottom: 1px solid var(--orange);
+}
+
+.signup-btn:hover {
+  color: var(--white);
+  border-bottom: 1px solid var(--white);
+  cursor: pointer;
+}

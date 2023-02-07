@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/shared.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="../css/first-section.css">
+    <link rel="stylesheet" href="../css/second-section.css">
+    <link rel="stylesheet" href="../css/third-section.css">
+    <link rel="stylesheet" href="../css/fourth-section.css">
+    <link rel="stylesheet" href="../css/fifth-section.css">
+    <link rel="stylesheet" href="../css/questions.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <title>Technology Page</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1693/1693746.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="align-center">
+        <nav class="navbar flex-row space-between align-center">
+            <a href="#home-Section"><img src="../images/TECHLOGO.png" alt="Tech Logo"></a>
+
+            <div>
+                <ul class="flex-row navbar-ul space-between align-center">
+                    <li>
+                        <div class="flex-column align-center space-between">
+                            <a href="#home-Section">home</a>
+                            <div class="dot"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex-column align-center space-between">
+                            <a href="#secondSecondWrapper">updates</a>
+                            <div class="dot"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex-column align-center space-between">
+                            <a href="#services-section">services</a>
+                            <div class="dot"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex-column align-center space-between">
+                            <a href="#events-section">features</a>
+                            <div class="dot"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex-column align-center space-between">
+                            <a href="#questions-section">about us</a>
+                            <div class="dot"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-row login-div space-between align-center">
+                <div class="flex-row space-between align-center">
+                    <img src="../images/Globe-Icon.png" alt="Globe Icon">
+                    <span>en</span>
+                </div>
+                <button id="loginButton" onclick="openLoginModal()">logIn</button>
+                <span id="Username" class="username none"></span>
+            </div>
+            <div onclick="openNavigation()" class="toggle-btn flex-column space-around none">
+                <div class="toggle-line"></div>
+                <div class="toggle-line"></div>
+                <div class="toggle-line"></div>
+            </div>
+        </nav>
+        <!-- Responsive-Navbar -->
+        <nav id="responsiveNavbar" class="responsive-navbar flex-column align-center none">
+            <div class="flex-column space-between align-center">
+                <span onclick="closeNavigation()" class="close-navbar">X</span>
+                <ul class="flex-column space-around responsive-navbar-ul">
+                    <li>
+                        <a onclick="closeNavigation()" href="#home-Section">home</a>
+                    </li>
+                    <li>
+                        <a onclick="closeNavigation()" href="#secondSecondWrapper">updates</a>
+                    </li>
+                    <li>
+                        <a onclick="closeNavigation()" href="#services-section">services</a>
+                    </li>
+                    <li>
+                        <a onclick="closeNavigation()" href="#events-section">features</a>
+                    </li>
+                    <li>
+                        <a onclick="closeNavigation()" href="#questions-section">about us</a>
+                    </li>
+                </ul>
+                <button id="responsiveLoginButton" onclick="openLoginModal(), closeNavigation()"
+                    class="responsive-login">logIn</button>
+                <span id="responsiveUsername" class="responsive-username none"></span>
+            </div>
+        </nav>
+    </header>
+    <!-- Login -->
+    <div id="loginModal" class="login-modal none">
+        <div class="login-container flex-column align-center">
+            <h4>Log in</h4>
+            <p id="errorMessage" class="error-message none"></p>
+            <span onclick="closeLoginModal()">X</span>
+            <input id="loginUsername" type="text" placeholder="Username">
+            <input id="loginPassword" type="password" placeholder="Password">
+            <button onclick="login()" class="modal-login-btn">Log in</button>
+            <button onclick="openSignupModal()" class="signup-btn">sign up</button>
+        </div>
+    </div>
+    <!-- Signup -->
+    <div id="signupModal" class="signup-modal none">
+        <div class="signup-container flex-column align-center">
+            <h4>Register</h4>
+            <p id="signupErrorMessage" class="signup-error-message none"></p>
+            <span onclick="closeSignupModal()">Back</span>
+            <input id="signupEmail" class="signup-input" type="email" placeholder="Email">
+            <input id="signupUsername" class="signup-input" type="text" placeholder="Username">
+            <input id="signupPassword" class="signup-input" type="password" placeholder="Password">
+            <input id="signupConfirmPassword" class="signup-input" type="password" placeholder="Confirm Password">
+            <div class="flex-row align-center">
+                <input id="signupCheckbox" class="agree-checkbox" type="checkbox">
+                <p>Agree terms and conditions</p>
+            </div>
+            <button onclick="signup()">Submit</button>
+        </div>
+    </div>
+    <!-- First Section -->
+    <section class="first-section" id="home-Section">
+        <div class="first-section-container flex-row">
+            <div class="first-sec-wrapper flex-row space-between align-center">
+                <div class="first-sec-header flex-column space-between">
+                    <div class="flex-column">
+                        <h1>ai & robotics</h1>
+                        <h2>next level machine intelligence</h2>
+                    </div>
+                    <button class="play-btn">
+                        <div class="flex-row space-between align-center">
+                            <img src="../images/Play-Icon.png" alt="Play Icon">
+                            <span>Play Demo</span>
+                        </div>
+                    </button>
+                </div>
+                <div class="first-sec-figures flex-column space-between align-center">
+                    <div class="flex-column space-between">
+                        <img src="../images/Hexagon.png" alt="Hexagon Img">
+                        <img src="../images/Artificial-Intelligence.png" alt="Artificial Intelligence Text">
+                    </div>
+                    <img class="rectangle-img" src="../images/Rectangle.png" alt="Rectangle Img">
+                </div>
+
+            </div>
+            <img class="robot-hand-img" src="/images/Robot-Hand.png" alt="">
+        </div>
+    </section>
+    <!-- Second Section -->
+    <section id="updates-Section">
+        <div class="second-section-container flex-column">
+            <div class="second-section-wrapper1 flex-column space-between align-center" id="secondSecondWrapper">
+                <div class="flex-column">
+                    <p>who we are</p>
+                    <h2>we help to get solutions</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur. Ac pellentesque velit ullamcorper nulla odio massa.
+                        Viverra
+                        dignissim ac vitae interdum consequat elementum sed. Tincidunt porttitor eget et adipiscing
+                        sagittis
+                        diam. Vitae sed nam vulputate bibendum ornare vitae. Scelerisque sit sed.</p>
+                </div>
+                <div class="flex-row solutions-second-div space-between align-center">
+                    <img class="half-circle" src="../images/Half-Circle.png" alt="Half Circle Icon">
+                    <div class="flex-row solutions-icons align-center space-between">
+                        <img src="../images/Rocket.png" alt="Rocket Icon">
+                        <div class="flex-column">
+                            <h3>lorem ipsum</h3>
+                            <p>Lorem Ipsum is simply dummy
+                                text of the printing and
+                                typesetting industry.</p>
+                        </div>
+                    </div>
+                    <div class="flex-row solutions-icons space-between align-center">
+                        <img src="../images/Light-Bulb.png" alt="Light-Bulb Icon">
+                        <div class="flex-column">
+                            <h3>lorem ipsum</h3>
+                            <p>Lorem Ipsum is simply dummy
+                                text of the printing and
+                                typesetting industry.</p>
+                        </div>
+                    </div>
+                    <img class="girl-robot" src="../images/Robot-Girl.png" alt="Girl Robot Pic">
+                </div>
+            </div>
+
+            <div class="second-section-wrapper2 flex-row space-between align-center">
+                <img src="../images/Robot&Earth.png" alt="Robot and Earth Picture">
+                <div class="flex-column">
+                    <p>lorem ipsum</p>
+                    <h3>ai robots technology</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur. Ac pellentesque velit ullamcorper nulla odio massa.
+                        Viverra dignissim ac vitae interdum consequat elementum sed. Tincidunt porttitor eget et
+                        adipiscing sagittis diam. Vitae sed nam vulputate bibendum ornare vitae. Scelerisque sit
+                        sed.Lorem ipsum dolor sit amet consectetur. Ac pellentesque velit ullamcorper nulla odio massa.
+                        Viverra dignissim ac vitae interdum consequat elementum sed. Tincidunt porttitor eget et
+                        adipiscing sagittis diam. Vitae sed nam vulputate bibendum ornare vitae. Scelerisque sit
+                        sed.Lorem ipsum dolor sit amet consectetur. Ac pellentesque velit ullamcorper nulla odio massa.
+                        Viverra dignissim ac vitae interdum consequat elementum sed. Tincidunt porttitor eget et
+                        adipiscing sagittis diam. Vitae sed nam vulputate bibendum ornare vitae. Scelerisque sit sed.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Third Section -->
+    <section id="services-section">
+        <div class="flex-column services-container space-between align-center">
+            <h3>our partners</h3>
+            <div class="flex-row logos-div space-around align-center">
+                <img src="../images/Partner1.png" alt="Partner1 Logo">
+                <img src="../images/Partner2.png" alt="Partner2 Logo">
+                <img src="../images/Partner3.png" alt="Partner3 Logo">
+                <img src="../images/Partner4.png" alt="Partner4 Logo">
+                <img src="../images/Partner5.png" alt="Partner5 Logo">
+                <img src="../images/Partner6.png" alt="Partner6 Logo">
+                <img src="../images/Partner7.png" alt="Partner7 Logo">
+                <img src="../images/Partner8.png" alt="Partner8 Logo">
+                <img src="../images/Partner9.png" alt="Partner9 Logo">
+                <img src="../images/Partner10.png" alt="Partner10 Logo">
+                <img src="../images/Partner11.png" alt="Partner11 Logo">
+                <img src="../images/Partner12.png" alt="Partner12 Logo">
+            </div>
+        </div>
+    </section>
+    <!-- Fourth Section -->
+    <section id="events-section">
+        <div class="events-container flex-column space-around align-center">
+            <h3>upcoming events</h3>
+            <div class="events-wrapper flex-row space-around">
+                <div onclick="getEvent1Info()" class="event-div flex-column align-center">
+                    <img src="../images/Robot-Man-1.png" alt="Robot Image">
+                    <div class="event-description flex-row space-around">
+                        <div class="flex-column">
+                            <span class="event-info" id="event1Month"></span>
+                            <span class="event-info" id="event1Date"></span>
+                        </div>
+                        <div class="flex-column space-between">
+                            <p class="event-info" id="event1Title"></p>
+                            <p class="event-info" id="event1Descrptn"></p>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="getEvent2Info()" class="event-div flex-column align-center">
+                    <img src="../images/Robot-Man-2.png" alt="Robot Image">
+                    <div class="event-description flex-row space-around">
+                        <div class="flex-column">
+                            <span class="event-info" id="event2Month"></span>
+                            <span class="event-info" id="event2Date"></span>
+                        </div>
+                        <div class="flex-column space-between">
+                            <p class="event-info" id="event2Title"></p>
+                            <p class="event-info" id="event2Descrptn"></p>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="getEvent3Info()" class="event-div flex-column align-center">
+                    <img src="../images/Robot-Girl-2.png" alt="Robot Image">
+                    <div class="event-description flex-row space-around">
+                        <div class="flex-column">
+                            <span class="event-info" id="event3Month"></span>
+                            <span class="event-info" id="event3Date"></span>
+                        </div>
+                        <div class="flex-column space-between">
+                            <p class="event-info" id="event3Title"></p>
+                            <p class="event-info" id="event3Descrptn"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fifth Section -->
+    <section id="questions-section">
+        <div class="questions-container flex-column space-around">
+            <div class="questions-header flex-column space-around align-center">
+                <h3>frequent ask qustions</h3>
+                <p>Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam
+                    ultrices tellus
+                    consequat amet, lectus aliquam est in neque.</p>
+            </div>
+            <div class="questions-div flex-column space-around ">
+                <div id="question1" onclick="openQuestionsModal()" class="question flex-row space-between align-center">
+                    <p class="align-center">How soon will my order ship?</p>
+                    <img src="../images/Right-Icon.png" alt="Right-Icon">
+                </div>
+                <div id="question2" onclick="openQuestionsModal()" class="question flex-row space-between align-center">
+                    <p class="align-center">Is there any warranty exclusions?</p>
+                    <img src="../images/Right-Icon.png" alt="Right-Icon">
+                </div>
+                <div id="question3" onclick="openQuestionsModal()" class="question flex-row space-between align-center">
+                    <p class="align-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit?</p>
+                    <img src="../images/Right-Icon.png" alt="Right-Icon">
+                </div>
+                <div id="question4" onclick="openQuestionsModal()" class="question flex-row space-between align-center">
+                    <p class="align-center">Will I be charged for a replacement item?</p>
+                    <img src="../images/Right-Icon.png" alt="Right-Icon">
+                </div>
+                <div id="question5" onclick="openQuestionsModal()" class="question flex-row space-between align-center">
+                    <p class="align-center">How can I track my orders & payment?</p>
+                    <img src="../images/Right-Icon.png" alt="Right-Icon">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Questions Modal -->
+    <div id="questionsModal" class="none">
+        <div class="flex-column questions-modal-container">
+            <span onclick="closeQuestionsModal()">X</span>
+            <p id="modalQuestion">how soon</p>
+            <p id="modalAnswer">very soon</p>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="flex-column">
+        <div class="footer-div1 flex-row space-between">
+            <div class="footer-info-box flex-column">
+                <h4>product</h4>
+                <span>Diam orci</span>
+                <span>Mi feugiat</span>
+                <span>Netus fermentum</span>
+                <span>Suspendisse viverra</span>
+                <span>Id dolor</span>
+                <span>Erat mattis</span>
+            </div>
+            <div class="footer-info-box flex-column">
+                <h4>information</h4>
+                <span>Diam orci</span>
+                <span>Mi feugiat</span>
+                <span>Netus fermentum</span>
+                <span>Suspendisse viverra</span>
+                <span>Id dolor</span>
+                <span>Erat mattis</span>
+            </div>
+            <div class="footer-info-box flex-column">
+                <h4>company</h4>
+                <span>Diam orci</span>
+                <span>Mi feugiat</span>
+                <span>Netus fermentum</span>
+                <span>Suspendisse viverra</span>
+                <span>Id dolor</span>
+                <span>Erat mattis</span>
+            </div>
+            <div class="footer-email-box flex-column">
+                <h4>subscribe</h4>
+                <div class="flex-row">
+                    <input type="email" placeholder="Email address">
+                    <button><img src="../images/Right-Icon.png" alt="Right Icon"></button>
+                </div>
+                <p>Gravida sed justo, justo, id est et. Amet tristique convallis sed porttitor nullam eu ut. Duis et
+                    odio aliquam bibendum. Metus et lectus id viverra fringilla magna morbi. </p>
+            </div>
+        </div>
+        <div class="footer-div2 flex-row space-between align-center">
+            <div class="flex-row space-between">
+                <span>terms</span>
+                <span class="fr">privacy</span>
+                <span>cookies</span>
+            </div>
+            <div class="flex-row space-between">
+                <img class="footer-icon" src="../images/LinkedIn-Icon.png" alt="LinkedIn Icon">
+                <img class="footer-icon" src="../images/FB-Icon.png" alt="Facebook Icon">
+                <img class="footer-icon" src="../images/Github-Icon.png" alt="Github Icon">
+            </div>
+        </div>
+    </footer>
+    <script src="../script/index.js"></script>
+</body>
+
+</html>

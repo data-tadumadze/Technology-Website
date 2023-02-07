@@ -1,0 +1,89 @@
+.signup-modal {
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../Images/Robot-Background.png");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.signup-container {
+  position: absolute;
+  top: 10%;
+  left: 35vw;
+  width: 30vw;
+  height: 80vh;
+  background-color: var(--darkblue);
+  border: 5px solid var(--orange);
+  border-radius: 10px;
+  justify-content: space-evenly;
+}
+
+.signup-container h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10%;
+  color: var(--white);
+}
+
+.signup-error-message {
+  font-size: 0.8rem;
+  top: 18%;
+  position: absolute;
+  text-align: center;
+  color: red;
+}
+
+.signup-container span {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  color: var(--orange);
+}
+
+.signup-container span:hover {
+  color: var(--white);
+  cursor: pointer;
+}
+
+.signup-input {
+  width: 50%;
+  height: 3vh;
+  padding: 5px;
+  border: 3px solid var(--orange);
+  border-radius: 3px;
+}
+
+.signup-container div {
+  width: 50%;
+}
+
+.signup-container div p {
+  font-size: 0.8rem;
+  color: var(--white);
+}
+
+.agree-checkbox {
+  width: 2vh;
+  height: 2vh;
+}
+
+.signup-container button {
+  font-size: 1rem;
+  height: 5vh;
+  width: 50%;
+  background-color: var(--orange);
+  color: var(--white);
+  border: none;
+  border-radius: 20px;
+}
+
+.signup-container button:hover {
+  background-color: var(--white);
+  color: var(--orange);
+  cursor: pointer;
+}

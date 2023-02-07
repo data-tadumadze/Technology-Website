@@ -1,0 +1,21 @@
+{
+  "event1-date": [
+    { "month": "APR", "date": 14 }
+  ],
+  "event1-descrptn": [
+    { "title": "Tech-Event", "description": " A technical (business) event defines the drivers of the business at the technical level"}
+  ],
+  "event2-date": [
+    { "month": "JUN", "date": 24 }
+  ],
+  "event2-descrptn": [
+    { "title": "AI Presentation", "description": "Artificial intelligence is intelligence perceiving, synthesizing"}
+  ],
+  "event3-date": [
+    { "month": "MAR", "date": 7 }
+  ],
+  "event3-descrptn": [
+    { "title": "Robot", "description": "A robot is a type of automated machine that can execute specific tasks with little"}
+  ]
+
+}

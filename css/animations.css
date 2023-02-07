@@ -1,0 +1,48 @@
+@keyframes up {
+  0% {
+    position: relative;
+    top: 0;
+  }
+
+  100% {
+    position: relative;
+    bottom: 10px;
+  }
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow: 0;
+  }
+  100% {
+    box-shadow: 0 5px 10px #aaaaaa;
+  }
+}
+
+@keyframes bigger {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    right: -45vw;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    top: -100vh;
+  }
+  100% {
+    top: 0;
+  }
+}

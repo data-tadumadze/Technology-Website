@@ -1,0 +1,28 @@
+@import "../css/colors.css";
+
+#services-section {
+  padding-top: 14vh;
+  height: 45vh;
+  background-color: var(--darkblue);
+}
+
+.services-container {
+  width: 90%;
+  margin: auto;
+}
+
+.services-container h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  letter-spacing: -1px;
+  color: var(--white);
+  font-weight: 600;
+}
+
+.logos-div {
+  flex-wrap: wrap;
+}
+
+.logos-div img {
+  width: 13%;
+}
